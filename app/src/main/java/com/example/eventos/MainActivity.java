@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements EventoAdaptador.R
     @Override
     public void itemClick(Eventos item) {
         //Llamamos al intent
-        Intent intent = new Intent(this, DetailActivity.class);
+        Intent intent = new Intent(getApplicationContext(), DetailActivity.class);
         intent.putExtra("itemDetail", item);
         startActivity(intent);
     }
